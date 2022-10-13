@@ -1,11 +1,11 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 body {
     background-color: rgb(245, 235, 222);
-    margin: 3rem 5% 3rem 5%;
+    margin: 0 5% 0 5%;
     font-family: "Playfair Display", serif;
 }
 
@@ -17,6 +17,12 @@ h2 {
     font-size: 1.7rem;
 }
 
+header {
+    border-bottom: 1px solid;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
 header > img {
     display: block;
     margin-left: auto;
@@ -24,8 +30,27 @@ header > img {
     height: 4rem;
 }
 
+.small-logo {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .full-logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: block;
+    }
+
+    header {
+        border-bottom: 0 none;
+    }
+}
+
 nav {
     font-family: "Red Hat Display", sans-serif;
+    padding: 0.5rem 0;
 }
 
 nav ul {
@@ -37,12 +62,42 @@ nav li {
     display: inline-block;
 }
 
+nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border: 1px solid black;
+}
+
+nav li a:hover,
+a[href="index.html"]:hover {
+    background-color: black;
+    color: rgb(245, 235, 222);
+    border-bottom-color: black;
+}
+
+nav li a[href="index.html"] {
+    background-color: rgb(218, 205, 191);
+    /* font-weight: bold; */
+    border-bottom-color: rgb(218, 205, 191);
+    color: black;
+}
+
+main {
+    background-color: rgb(218, 205, 191);
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
 section {
     display: flex;
+    padding: 1rem;
 }
 
 article {
     flex: 1;
+    padding: 1rem;
+    background-color: rgb(233, 220, 206);
 }
 
 footer {
@@ -51,7 +106,15 @@ footer {
 
 footer div {
     flex: 1;
+    padding: 1rem;
+    /* border-bottom: 1px solid black; */
+    border-top: 1px double black;
 }
+
 footer img {
     height: 3rem;
+}
+
+footer div.left {
+    border-right: 1px solid black;
 }
