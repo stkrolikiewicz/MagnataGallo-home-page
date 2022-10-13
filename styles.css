@@ -89,15 +89,30 @@ main {
     border: 1px solid black;
     margin-bottom: 1rem;
 }
+
+.section1 {
+    padding-bottom: 0;
+}
+
 section {
     display: flex;
     padding: 1rem;
+}
+section article img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 
 article {
     flex: 1;
     padding: 1rem;
+    margin-right: 1rem;
     background-color: rgb(233, 220, 206);
+}
+
+.last-article {
+    margin-right: 0;
 }
 
 footer {
