@@ -109,6 +109,12 @@ article {
     padding: 1rem;
     margin-right: 1rem;
     background-color: rgb(233, 220, 206);
+    border: 1px solid rgb(233, 220, 206);
+}
+
+article:hover {
+    background-color: rgb(241, 237, 229);
+    border-color: black;
 }
 
 .last-article {
