@@ -1,0 +1,57 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background-color: rgb(245, 235, 222);
+    margin: 3rem 5% 3rem 5%;
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4rem;
+}
+
+nav {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+footer img {
+    height: 3rem;
+}
