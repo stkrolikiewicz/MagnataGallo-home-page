@@ -48,39 +48,43 @@ header > img {
     }
 }
 
+@media (max-width: 463px) {
+}
+
 nav {
     font-family: "Red Hat Display", sans-serif;
-    padding: 0.5rem 0;
+    padding: 0 0 1rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
     text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-nav li {
-    display: inline-block;
-}
-
-nav li a {
+nav a {
     text-decoration: none;
     color: black;
     padding: 0.5rem 1rem;
-    margin: 0 0.2rem;
+    flex: 1 0 auto;
     border: 1px solid black;
 }
 
-nav li a:hover,
+nav a:hover,
 a[href="index.html"]:hover {
     background-color: black;
     color: rgb(245, 235, 222);
     border-bottom-color: black;
 }
 
-nav li a[href="index.html"] {
+nav a[href="index.html"] {
     background-color: rgb(218, 205, 191);
     /* font-weight: bold; */
-    border-bottom-color: rgb(218, 205, 191);
+    /* border-bottom-color: rgb(218, 205, 191); */
     color: black;
 }
 
