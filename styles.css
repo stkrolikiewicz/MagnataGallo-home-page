@@ -90,10 +90,6 @@ main {
     margin-bottom: 1rem;
 }
 
-.section1 {
-    padding-bottom: 0;
-}
-
 section {
     display: flex;
     padding: 1rem;
@@ -102,6 +98,24 @@ section article img {
     max-height: 250px;
     width: 100%;
     object-fit: cover;
+}
+
+.section1 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+}
+.section2 {
+    overflow-x: auto;
+}
+
+.section2 > article {
+    /* max-height: 90vh; */
+    min-width: 250px;
+    width: auto;
+    overflow: hidden;
+}
+article > p {
+    overflow: hidden;
 }
 
 article {
@@ -123,6 +137,7 @@ article:hover {
 
 footer {
     display: flex;
+    margin-bottom: 1rem;
 }
 
 footer div {
