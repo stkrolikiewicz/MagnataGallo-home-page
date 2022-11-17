@@ -69,7 +69,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     flex: 1 0 auto;
     border: 1px solid black;
 }
